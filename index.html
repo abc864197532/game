@@ -3,31 +3,63 @@
 <head>
     <title>The Game!</title>
     <meta charset="utf-8">
+    <script nomodule src="module.js"></script>
     <script src="game.js" defer></script>
 </head>
 
 <body>
-    <button id="short">
-        短打
-    </button>
-    <button id="long">
-        長打
-    </button>
-    <button id="walk">
-        保送
-    </button>
-    <button id="out">
-        出局
-    </button>
-    <button id="reset">
-        重來
-    </button>
+    <div>
+        <button id="short">
+            短打
+        </button>
+        <button id="long">
+            長打
+        </button>
+        <button id="walk">
+            保送
+        </button>
+        <button id="out">
+            出局
+        </button>
+        <button id="reset">
+            重來
+        </button>
+    </div>
     <p id="scoreboard">
     </p>
     <p id="play">   
     </p>
-    <p id="bat_info">
-    </p>
+    <div style="float: left; width: 250px;">
+        <select id="list">
+            <option>基本資訊</option>
+        </select>
+        <p id="basic_info"></p>
+    </div>
+    <div style="float: left; width: 250px;">
+        <select id="batter_list">
+            <option value="0">打者資訊</option>
+            <option value="12">今日表現</option>
+            <option value="19">近五場表現</option>
+            <option value="26">近十場表現</option>
+            <option value="33">賽季表現</option>
+            <option value="40">在當前好壞球數的情況下的表現</option>
+            <option value="47">在當前壘包情況下的表現</option>
+            <option value="54">面對左投/右投的表現</option>
+            <option value="89">面對投手球種的平均表現</option>
+        </select> 
+        <p id="batter_info"></p>
+    </div>
+    <div style="float: left; width: 250px;">
+        <select id="pitcher_list">
+            <option value="0">投手資訊</option>
+            <option value="61">近三場表現</option>
+            <option value="68">近五場表現</option>
+            <option value="75">賽季表現</option>
+            <option value="82">面對左打/右打的表現</option>
+            <option value="1">最近數球的球速平均</option>
+        </select> 
+        <p id="pitcher_info"></p>
+    </div>
 </body>
 
 </html>
