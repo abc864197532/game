@@ -16,7 +16,7 @@ const haveornot = ['沒', '有'];
 const homeaway = ['客', '主'];
 const WIN = 5;
 const FIN_ROUND = 4;
-const SHOWTIME = 1000;
+const SHOWTIME = 2000;
 
 let play_id;
 let com_score;
